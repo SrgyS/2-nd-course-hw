@@ -80,6 +80,12 @@ h1 {
     background: rgba(156, 3, 50, 1);
     padding: 13.3px 74px;
     border-radius: 30px;
+    transition: background .4s;
+}
+
+.btn:hover {
+    background: rgba(235, 68, 63, 1);
+
 }
 
 .cards {
@@ -99,6 +105,13 @@ h1 {
     background-repeat: no-repeat;
     position: relative;
     border-radius: 16px;
+    transition: border .4s;
+    cursor: pointer;
+    border: 3px solid rgba(0, 9, 21, 1);
+}
+
+.cards__item:hover {
+    border: 3px solid #44D2FF;
 }
 
 .cards__item_1 {
