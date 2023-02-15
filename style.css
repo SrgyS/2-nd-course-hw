@@ -88,50 +88,57 @@ h1 {
 
 }
 
-.cards {
+.games {
     background-color: rgba(0, 9, 21, 1);
     padding-top: 128px;
     padding-bottom: 128px;
+
+}
+
+.games__list {
     display: flex;
     align-items: center;
     gap: 32px;
 }
 
-.cards__item {
+.games__link {
     width: 378px;
     height: 300px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
     border-radius: 16px;
-    transition: border .4s;
     cursor: pointer;
     border: 3px solid rgba(0, 9, 21, 1);
+    transition: border .4s;
+    display: block;
+    position: relative;
 }
 
-.cards__item:hover {
-    border: 3px solid #44D2FF;
-}
-
-.cards__item_1 {
-    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./img/card1.jpg);
-}
-
-.cards__item_2 {
-    background-image: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./img/card2.jpg);
-}
-
-.cards__item_3 {
-    background-image: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./img/card3.jpg);
-}
-
-.cards__item-text {
-    color: #FFFFFF;
+.game__name {
+    position: absolute;
+    margin-left: 32px;
+    margin-top: 236px;
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
-    position: absolute;
-    top: 236px;
-    left: 32px;
+    color: #FFFFFF;
+
+}
+
+.games__link:hover {
+    border: 3px solid #44D2FF;
+
+}
+
+.games__link--1 {
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./img/card1.jpg);
+}
+
+.games__link--2 {
+    background-image: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./img/card2.jpg);
+}
+
+.games__link--3 {
+    background-image: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./img/card3.jpg);
 }
