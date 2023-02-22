@@ -78,3 +78,48 @@ switch (monthNumber) {
     default: console.log('Нет месяца с таким номером')
         break;
 }
+
+// Task7
+
+let num = prompt('Введите любое число')
+
+if (isNaN(num)) { 
+    console.log('Это не число')
+  }
+  else {
+      num % 2 === 0 ? console.log('Число чётное') : console.log('Число нечетное')
+  }
+
+// Task8
+
+let clientOS = prompt('Ведите 0 если у вас iOS, 1 если Android')
+
+switch (clientOS) {
+    case '0' : console.log('Установите версию приложения для iOS по ссылке.')        
+        break;
+    case '1' : console.log('Установите версию приложения для Android по ссылке.')        
+        break;
+    default: console.log('Введите 0 или 1')
+        break;
+}
+
+// Task9
+
+let clientOS = Number(prompt('Ведите 0 если у вас iOS, 1 если Android'))
+let clientDeviceYear = Number(prompt('Введите год производства телефона'))
+
+if (clientOS == 0 && clientDeviceYear < 2015) {
+    console.log('Установите облегченную версию приложения для iOS по ссылке.')        
+} 
+else if (clientOS === 1 && clientDeviceYear < 2015) {
+    console.log('Установите облегченную версию приложения для Android по ссылке.')
+} 
+else if (clientOS === 0 && clientDeviceYear >= 2015) {
+    console.log('Установите версию приложения для iOS по ссылке.')
+} 
+else if (clientOS === 1 && clientDeviceYear >= 2015) {
+        console.log('Установите версию приложения для Android по ссылке.') 
+}
+else {
+    console.log('Введены некорректные данные')
+}
