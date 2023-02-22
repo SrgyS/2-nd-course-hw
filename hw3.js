@@ -26,53 +26,29 @@ alert(Number(a) + Number(b));
 
 let monthNumber = prompt('Введите номер месяца')
 
-switch (monthNumber) {
-    case '1' :
+switch (+monthNumber) {
+    case 1 :
+    case 2 :
+    case 12 :
         console.log('Зима')
         break;
 
-    case '2' :
-        console.log('Зима')
-        break;
-
-    case '3' :
+    case 3 :
+    case 4 :
+    case 5 :
         console.log('Весна')
         break;
 
-    case '4' :
-        console.log('Весна')
-        break;
-
-    case '5' :
-        console.log('Весна')
-        break;
-
-    case '6' :
+    case 6 :
+    case 7 :
+    case 8 :
         console.log('Лето')
         break;
 
-    case '7' :
-        console.log('Лето')
-        break;
-
-    case '8' :
-        console.log('Лето')
-        break;
-
-    case '9' :
+    case 9 :
+    case 10 :
+    case 11 :
         console.log('Осень')
-        break;
-
-    case '10' :
-        console.log('Осень')
-        break;
-    
-    case '11' :
-        console.log('Осень')
-        break;
-                
-    case '12' :
-        console.log('Зима')
         break;
 
     default: console.log('Нет месяца с таким номером')
