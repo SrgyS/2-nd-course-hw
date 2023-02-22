@@ -108,7 +108,7 @@ switch (clientOS) {
 let clientOS2 = Number(prompt('Ведите 0 если у вас iOS, 1 если Android'))
 let clientDeviceYear = Number(prompt('Введите год производства телефона'))
 
-if (clientOS2 == 0 && clientDeviceYear < 2015) {
+if (clientOS2 === 0 && clientDeviceYear < 2015) {
     console.log('Установите облегченную версию приложения для iOS по ссылке.')        
 } 
 else if (clientOS2 === 1 && clientDeviceYear < 2015) {
