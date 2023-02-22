@@ -105,19 +105,19 @@ switch (clientOS) {
 
 // Task9
 
-let clientOS = Number(prompt('Ведите 0 если у вас iOS, 1 если Android'))
+let clientOS2 = Number(prompt('Ведите 0 если у вас iOS, 1 если Android'))
 let clientDeviceYear = Number(prompt('Введите год производства телефона'))
 
-if (clientOS == 0 && clientDeviceYear < 2015) {
+if (clientOS2 == 0 && clientDeviceYear < 2015) {
     console.log('Установите облегченную версию приложения для iOS по ссылке.')        
 } 
-else if (clientOS === 1 && clientDeviceYear < 2015) {
+else if (clientOS2 === 1 && clientDeviceYear < 2015) {
     console.log('Установите облегченную версию приложения для Android по ссылке.')
 } 
-else if (clientOS === 0 && clientDeviceYear >= 2015) {
+else if (clientOS2 === 0 && clientDeviceYear >= 2015) {
     console.log('Установите версию приложения для iOS по ссылке.')
 } 
-else if (clientOS === 1 && clientDeviceYear >= 2015) {
+else if (clientOS2 === 1 && clientDeviceYear >= 2015) {
         console.log('Установите версию приложения для Android по ссылке.') 
 }
 else {
