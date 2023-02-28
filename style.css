@@ -244,8 +244,9 @@ h1 {
     color: var(--main-text-color);
     display: flex;
     justify-content: space-between;
-    gap: 135px;
+    gap: 130px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .game__content {
@@ -291,13 +292,14 @@ h1 {
     h1 {
         font-size: 32px;
         line-height: 39px;
+        text-align: center;
     }
 
     .top {
         height: 735px;
     }
 
-    .top__text {
+    .top__text, .text {
         font-size: 14px;
         line-height: 22px;
         text-align: center;
@@ -318,5 +320,24 @@ h1 {
         width: 343px;
     }
 
-    .games__list {}
+    .game-1 {
+        padding-top: 51px;
+        padding-bottom: 85px;
+        margin-top: -1px;
+    }
+
+    .game__title {
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+    }
+
+    .game__content {
+        align-items: center;
+    }
+
+    .game__img {
+        width: 344px;
+        height: 236px;
+    }
 }
