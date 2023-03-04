@@ -92,6 +92,7 @@ console.log(str.split('').reverse().join(''))
 
 const arr9 = [[1, 2, 3,], [4, 5, 6]]
 console.log(arr9[0].concat(arr9[1]))
+console.log(arr9.flat())
 
 //Задание 10
 //Создайте массив с произвольными числами (диапазон от 1 до 10). Переберите его с помощью цикла 
