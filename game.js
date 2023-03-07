@@ -14,3 +14,18 @@ function seasons() {
         alert('Нет месяца с таким номером')
     }
 
+    function memory() {
+        let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин']
+
+        fruits = fruits.sort(() => Math.random() - 0.5)
+        alert(fruits.join(', '))
+        let answer1 = prompt('Чему равнялся первый элемент массива?')
+        let answer2 = prompt('Чему равнялся последний элемент массива?')
+
+        if (answer1.toLowerCase() == fruits[0].toLowerCase() && answer2.toLowerCase() == fruits[fruits.length - 1].toLowerCase())
+        alert('Поздравляю! У вас отличная память!')
+        else if (answer1.toLowerCase() == fruits[0].toLowerCase() || answer2.toLowerCase() == fruits[fruits.length - 1].toLowerCase())
+        alert('Вы были близки к победе!')
+        else alert('Ответ неверный')
+    }
+

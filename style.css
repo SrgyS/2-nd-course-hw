@@ -263,8 +263,15 @@ h1 {
     line-height: 59px;
 }
 
-.game__img {
+.game__img-1 {
     background-image: url(./img/gamer.png);
+}
+
+.game__img-2 {
+    background-image: url(./img/gamer2.png);
+}
+
+.game__img {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -275,6 +282,12 @@ h1 {
 .game-1 {
     padding-top: 233.5px;
     padding-bottom: 233.5px;
+    margin-top: -1px;
+}
+
+.game-2 {
+    padding-top: 239px;
+    padding-bottom: 239px;
     margin-top: -1px;
 }
 
@@ -320,10 +333,14 @@ h1 {
         width: 343px;
     }
 
-    .game-1 {
+    .game-1, .game-2 {
         padding-top: 51px;
         padding-bottom: 85px;
         margin-top: -1px;
+    }
+
+    .game__img-2 {
+        margin-bottom: 5px;
     }
 
     .game__title {
@@ -339,5 +356,9 @@ h1 {
     .game__img {
         width: 344px;
         height: 236px;
+    }
+
+    .game-2 .game__content {
+        order: -1;
     }
 }
