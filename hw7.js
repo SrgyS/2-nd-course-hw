@@ -19,7 +19,12 @@ function filterArr(arr, str) {
     return filteredArr
 }
 
+function filterArr2(arr, str) {
+   const result = arr.filter(el => el.toLowerCase().startsWith(str.toLowerCase()))
+   return result
+}
 console.log(filterArr(arr, str))
+console.log(filterArr2(arr, str))
 
 //Задание 3
 //Округлите число 32.58884:
@@ -44,8 +49,8 @@ console.log(`Минимальное значение: ${Math.min(52, 53, 49, 77,
 //Создайте функцию, которая будет выводить в консоль рандомное число от 1 до 10.
 
 const getRandomNum = ()=> {
-    min = 1
-    max = 10
+    const min = 1
+    const max = 10
     randomNum = Math.round(Math.random() * (max - min) + min)
     console.log(randomNum)
 }    
